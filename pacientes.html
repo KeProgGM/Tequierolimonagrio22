@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        thead,
+        tbody {
+            display: block;
+            border: 1px solid #ccc;
+            align-items: center;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+        }
+
+        tr {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            flex: 1;
+            text-align: left;
+            padding: 10px;
+        }
+
+        td {
+            width: 50%;
+            flex: 1;
+            padding: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        input{
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .button {
+            background-color: #827ae7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pacientes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Teléfono</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jairo</td>
+                <td>Mora</td>
+                <td>30</td>
+                <td>Femenino</td>
+                <td>5555-1234</td>
+
+            </tr>
+            <tr>
+                <td>Odalys</td>
+                <td>Mayorga</td>
+                <td>25</td>
+                <td>Femenino</td>
+                <td>5555-5678</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Agregar Paciente</h3>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Seleccione</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <input class="button" type="submit" value="Agregar Paciente">
+    </form>
+</body>
+
+</html>
